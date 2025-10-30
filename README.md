@@ -35,6 +35,4 @@ Este site estático foi construído com foco em fundamentos web e design respons
 Certifique-se de ter um navegador moderno e o Git instalado.
 
 ### Acessando o Projeto
-1. **Clone o repositório:**
-   ```bash
-  git clone SEU_(https://github.com/m-assis/agroconecta-site)
+1. [git clone SEU_(https://github.com/m-assis/agroconecta-site](https://agroconecta-site.vercel.app/))
