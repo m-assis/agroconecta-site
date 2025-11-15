@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>AgroConecta - Conectando Conhecimento e Tecnologia</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
 <body>
 
     <header class="header">
         <div class="container navbar">
             <div class="logo">
-                <img src="logotipo.png" alt="AgroConecta Logo">
-            
-            </div>
+                <img src="img/logotipo.png" alt="AgroConecta Logo"> 
+                <span></span>
+        </div>
             
             <nav class="nav-links">
                 <ul>
@@ -29,7 +29,7 @@
         </div>
     </header>
 
-    <section class="hero-section" id="inicio">
+    <section class="hero-section">
         <div class="hero-content">
             <h1>AgroConecta</h1>
             <h2>Conectando Conhecimento e Tecnologia</h2>
@@ -41,9 +41,17 @@
                 <a href="#fale-conosco" class="btn btn-secondary">Fale Conosco</a>
             </div>
         </div>
-    </section>
-    
-    <div class="separator-bar"></div>
+        </section>
+
+        </section>
+
+        <div class="separator-bar"></div>
+        
+        <section class="problema-section" id="problema">
+        </section>
+
+     <section>
+        <div class="separator-bar"></div>
 
     <section class="problema-section" id="problema">
         <div class="container">
@@ -94,7 +102,7 @@
 
                     <div class="alvo-right">
                         <div class="persona-card">
-                            <img src="jose-almeida.png" alt="José da Almeida" class="persona-img">
+                            <img src="img/jose-almeida.png" alt="José da Almeida" class="persona-img">
                             <h4>José da Almeida</h4>
                             <p class="persona-subtitle">55 anos - Minas Gerais</p>
                             <p class="persona-role">Pequeno Agricultor Familiar</p>
@@ -106,6 +114,8 @@
             </div>
 
         </div> 
+    </section>
+
     </section>
 
     <section class="solucao-section" id="solucao">
@@ -121,7 +131,7 @@
 
             <div class="dona-rosa-card">
                 <div class="rosa-image">
-                    <img src="dona-rosa.png" alt="Assistente Virtual Dona Rosa">
+                    <img src="img/dona-rosa.png" alt="Assistente Virtual Dona Rosa">
                 </div>
                 
                 <div class="rosa-content">
@@ -174,6 +184,8 @@
             </div>
             
         </div>
+    </section>
+
     </section>
 
     <section class="recursos-section" id="recursos">
@@ -256,73 +268,153 @@
 
         </div>
     </section>
+ 
+    <section class="contato-section">
 
-    <section class="contato-section" id="fale-conosco">
-        <div class="container">
-            <div class="contato-header">
-                <div class="badge-contato">Contato</div> 
-                
-                <h2>Fale Conosco</h2>
-                <p class="contato-description">
+    <div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            
+            <div class="text-center mb-5">
+                <span class="badge rounded-pill text-warning border border-warning p-2 px-3 fw-bold mb-3" style="font-size: 0.9em;">
+                    Contato
+                </span>
+                <h1 class="display-4 fw-bold mb-3">
+                    Fale Conosco
+                </h1>
+                <p class="text-muted lead">
                     Tem dúvidas ou quer saber mais sobre o AgroConecta? Entre em contato conosco!
                 </p>
             </div>
-
-            <div class="form-wrapper">
-                <form class="contato-form">
-                    
-                    <label for="nome">Nome Completo *</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                    
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-
-                    <label for="assunto">Assunto *</label>
-                    <input type="text" id="assunto" name="assunto" placeholder="Sobre o que deseja falar?" required>
-
-                    <label for="mensagem">Mensagem *</label>
-                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." rows="6" required></textarea>
-
-                    <button type="submit" class="btn btn-form">Enviar Mensagem</button>
-
-                    <p class="campos-obrigatorios">* Campos obrigatórios</p>
-                </form>
-            </div>
             
-        </div>
-    </section>
+            <form action="#" class="was-validated bg-light p-4 rounded shadow">
+                
+                <p class="text-start">* Campos obrigatórios</p>
 
-    <footer class="footer">
-        <div class="container footer-grid">
-            
-            <div class="footer-col footer-info">
-                <div class="footer-logo">
-                    <img src="logotipo.png" alt="AgroConecta Logo" class="logo-footer-img">
+                <div class="text-start mb-3">
+                    <label for="nome" class="form-label">Nome Completo <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="nome" name="nome" 
+                           placeholder="Digite seu nome completo" required>
+                    <div class="invalid-feedback">
+                        Por favor, insira seu nome completo.
+                    </div>
                 </div>
-                <p>Conectando conhecimento e tecnologia para transformar a agricultura familiar brasileira.</p>
-            </div>
 
-            <div class="footer-col footer-links">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#problema">O Problema</a></li>
-                    <li><a href="#solucao">Solução</a></li>
-                    <li><a href="#recursos">Recursos</a></li>
-                    <li><a href="#fale-conosco">Fale Conosco</a></li>
-                </ul>
-            </div>
+                             
+                <div class="input-group mb-3 text-start">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Usuário" name="usrname" required>
+                    <span class="input-group-text">.com</span>
+                     <div class="invalid-feedback">
+                        Obrigatório preencher o usuário.
+                    </div>
+                </div>
 
-            <div class="footer-col footer-missao">
-                <h4>Nossa Missão</h4>
-                <p>Apoiando o ODS 2 da ONU – Fome Zero e Agricultura Sustentável.</p>
-                <p class="missao-meta">Meta 2.3: Até 2030, dobrar a produtividade agrícola e a renda dos pequenos produtores.</p>
-            </div>
 
+                <div class="text-start mb-3">
+                    <label for="telefone" class="form-label"> Telefone <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" 
+                           placeholder="Seu telefone com DDD (Ex: 11987654321)" required>
+                    <div class="invalid-feedback">
+                        Por favor, insira seu telefone com DDD.
+                    </div>
+                </div>
+
+                <div class="text-start mb-3">
+                    <label for="sel1" class="form-label">Selecione o estado que você está falando <span class="text-danger">*</span>:</label>
+                    <select class="form-select" id="sel1" name="sellist1" required>
+                        <option value="" disabled selected>Selecione um estado...</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                        <option>Paraná</option>
+                    </select>
+                     <div class="invalid-feedback">
+                        Por favor, selecione um estado.
+                    </div>
+                </div>
+
+                <div class="text-start mb-3">
+                    <label for="assunto" class="form-label">Assunto <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="assunto" name="assunto" 
+                           placeholder="Sobre o que deseja falar?" required>
+                    <div class="invalid-feedback">
+                        Por favor, insira o assunto.
+                    </div>
+                </div>
+
+                <div class="text-start mb-3">
+                    <label for="mensagem" class="form-label">Mensagem <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" 
+                              placeholder="Digite sua mensagem..." rows="6" required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor, digite sua mensagem.
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="mb-3">
+                    <p class="form-label">Preferência de contato <span class="text-danger">*</span>:</p>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="ck1" name="contato_ligacao" value="Ligação" checked>
+                        <label class="form-check-label" for="ck1">Ligação</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="ck2" name="contato_whatsapp" value="WhatsApp">
+                        <label class="form-check-label" for="ck2">WhatsApp</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="ck3" name="contato_email" value="E-mail">
+                        <label class="form-check-label" for="ck3">E-mail</label>
+                    </div>
+                </div>
+
+                <div class="form-check form-switch mb-4">
+                    <input class="form-check-input" type="checkbox" id="mySwitch" name="Atendimento_PDC" value="selecionado" checked>
+                    <label class="form-check-label" for="mySwitch">Deseja Atendimento Preferencial (PCD)?</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                    Enviar Mensagem
+                </button>
+            </form>
         </div>
-    </footer>
+    </div>
+</div>
+</section>
 
-</body>
+<footer class="footer">
+    <div class="container footer-grid">
+        
+        <div class="footer-col footer-info">
+            <div class="footer-logo">
+                <img src="img/logotipo.png" alt="AgroConecta Logo" class="logo-footer-img">
+            </div>
+            <p>Conectando conhecimento e tecnologia para transformar a agricultura familiar brasileira.</p>
+        </div>
+
+        <div class="footer-col footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#problema">O Problema</a></li>
+                <li><a href="#solucao">Solução</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#fale-conosco">Fale Conosco</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-missao">
+            <h4>Nossa Missão</h4>
+            <p>Apoiando o ODS 2 da ONU – Fome Zero e Agricultura Sustentável.</p>
+            <p class="missao-meta">Meta 2.3: Até 2030, dobrar a produtividade agrícola e a renda dos pequenos produtores.</p>
+        </div>
+
+    </div>
+</footer>
+
+    </body>
 </html>
 
 
