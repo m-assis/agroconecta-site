@@ -6,8 +6,9 @@
 }
 
 body {
+    
     font-family: Arial, sans-serif; 
-    color: #fff;
+    color: #fff; /
 }
 
 .container {
@@ -19,15 +20,16 @@ body {
 /* --- ESTILOS DO CABEÇALHO (NAVBAR) --- */
 
 .header {
-    background-color: rgba(142, 150, 48, 0.8);
-    position: absolute;
+    
+    background-color: rgba(142, 150, 48, 0.8); 
+    position: absolute; 
     width: 100%;
     z-index: 10;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     padding: 15px 0;
 }
@@ -35,7 +37,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #fff; 
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -56,7 +58,7 @@ body {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; 
     font-weight: 500;
     font-size: 1em;
     padding-bottom: 5px; 
@@ -64,24 +66,24 @@ body {
 }
 
 .nav-links ul li a:hover {
-    border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #fff;
 }
 
 
 /* --- ESTILOS DA SEÇÃO HERO --- */
-
-.hero-section {
-    /* CORREÇÃO: Removido 'img/' do caminho da URL */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('fundo-agro.jpg') no-repeat center center/cover;
+  
+   .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), 
+                url('img/fundo-agro.jpg') no-repeat center center/cover;
     height: 100vh; 
     display: flex;
-    align-items: center;
+    align-items: center; 
     padding-top: 80px;
 }
 
 .hero-content {
-    max-width: 600px;
-    margin-left: 100px;
+        max-width: 600px;
+    margin-left: 100px; 
 }
 
 .hero-content h1 {
@@ -106,7 +108,7 @@ body {
 .hero-buttons {
     margin-top: 30px;
     display: flex;
-    gap: 20px;
+    gap: 20px; 
 }
 
 .btn {
@@ -116,7 +118,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    border: 2px solid transparent;
+    border: 2px solid transparent; 
 }
 
 .btn-primary {
@@ -138,21 +140,12 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* --- ESTILOS DA BARRA SEPARADORA --- */
-
-.separator-bar {
-    background-color: #e56d35;
-    width: 100%;
-    height: 60px; 
-    margin-top: 0; 
-}
-
 /* --- SEÇÃO O PROBLEMA --- */
 
 .problema-section {
-    background-color: #f7a262;
-    padding: 80px 0;
-    color: #444;
+        background-color: #f7a262; 
+    padding: 80px 0; 
+    color: #444; 
     text-align: center;
 }
 
@@ -161,10 +154,11 @@ body {
     margin: 0 auto 60px;
 }
 
+/* Ícone "O Desafio" */
 .badge-desafio {
     display: inline-block;
     background-color: #fff;
-    color: #e56d35;
+    color: #e56d35; 
     padding: 8px 15px;
     border-radius: 50px;
     font-size: 0.9em;
@@ -175,7 +169,7 @@ body {
 
 .problema-header h2 {
     font-size: 2.5em;
-    color: #424242;
+    color: #424242; 
     margin-bottom: 20px;
 }
 
@@ -190,7 +184,7 @@ body {
 .desafios-cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; 
     margin-bottom: 80px;
 }
 
@@ -205,12 +199,12 @@ body {
 }
 
 .card-desafio:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
 }
 
 .card-icon {
-    font-size: 2.5em;
-    color: #79a63c;
+    font-size: 2.5em; /* Tamanho do ícone placeholder */
+    color: #79a63c; /* Cor verde/amarela para os ícones */
     margin-bottom: 15px;
 }
 
@@ -251,7 +245,7 @@ body {
 }
 
 .alvo-left h4 {
-    color: #e56d35;
+    color: #e56d35; /* Cor do título: Laranja */
     margin-bottom: 15px;
     font-size: 1.2em;
 }
@@ -269,8 +263,8 @@ body {
 }
 
 .alvo-left ul li::before {
-    content: "•";
-    color: #79a63c;
+    content: "•"; /* Substitui o bullet point */
+    color: #79a63c; /* Cor do bullet: Verde */
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -287,7 +281,7 @@ body {
 .persona-card {
     text-align: center;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Borda sutil */
     border-radius: 10px;
     max-width: 300px;
 }
@@ -296,12 +290,12 @@ body {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%; /* Imagem redonda */
     margin-bottom: 15px;
 }
 
 .persona-role {
-    color: #79a63c;
+    color: #79a63c; /* Cor verde para o papel */
     font-weight: bold;
     margin: 5px 0;
 }
@@ -315,7 +309,8 @@ body {
 /* --- SEÇÃO A SOLUÇÃO --- */
 
 .solucao-section {
-    background-color: #a4c90e;
+    /* Fundo Verde-Oliva da seção */
+    background-color: #a4c90e; /* Cor principal de destaque (verde da navbar/botões) */
     padding: 80px 0; 
     color: #444; 
     text-align: center;
@@ -326,10 +321,11 @@ body {
     margin: 0 auto 60px;
 }
 
+/* Badge "A Solução" */
 .badge-solucao {
     display: inline-block;
     background-color: #fff;
-    color: #a4c90e;
+    color: #a4c90e; /* Cor do texto do badge: verde */
     padding: 8px 15px;
     border-radius: 50px;
     font-size: 0.9em;
@@ -347,7 +343,7 @@ body {
 .solucao-description {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #f0f0f0;
+    color: #f0f0f0; /* Texto mais claro para o fundo escuro */
     max-width: 600px;
     margin: 0 auto;
 }
@@ -367,7 +363,7 @@ body {
 }
 
 .rosa-image {
-    flex: 0 0 40%;
+    flex: 0 0 40%; /* Ocupa 40% da largura do card */
     padding-right: 30px;
     text-align: center;
 }
@@ -378,7 +374,7 @@ body {
 }
 
 .rosa-content {
-    flex: 0 0 60%;
+    flex: 0 0 60%; /* Ocupa 60% da largura do card */
 }
 
 .rosa-content h3 {
@@ -405,8 +401,8 @@ body {
 }
 
 .rosa-content ul li::before {
-    content: "•";
-    color: #a4c90e;
+    content: "•"; 
+    color: #a4c90e; /* Cor do bullet: Verde */
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -417,7 +413,7 @@ body {
 
 .componentes-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
     justify-content: center;
     gap: 20px;
     max-width: 900px;
@@ -428,7 +424,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    width: calc(50% - 10px);
+    width: calc(50% - 10px); /* Ocupa metade da largura do container, menos o gap */
     display: flex;
     align-items: flex-start;
     text-align: left;
@@ -437,7 +433,7 @@ body {
 
 .comp-icon {
     font-size: 2em;
-    color: #a4c90e;
+    color: #a4c90e; /* Cor dos ícones: Verde */
     margin-right: 15px;
 }
 
@@ -455,7 +451,8 @@ body {
 /* --- SEÇÃO RECURSOS E BENEFÍCIOS --- */
 
 .recursos-section {
-    background-color: #fce990;
+    /* Fundo Amarelo Claro da seção */
+    background-color: #fce990; /* Cor aproximada da imagem */
     padding: 80px 0; 
     color: #444; 
     text-align: center;
@@ -468,7 +465,7 @@ body {
 
 .recursos-header h2 {
     font-size: 2.5em;
-    color: #e56d35;
+    color: #e56d35; /* Cor Laranja/Coral do título */
     margin-bottom: 20px;
 }
 
@@ -492,15 +489,15 @@ body {
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
-    width: calc(50% - 15px);
+    width: calc(50% - 15px); /* Ocupa metade da largura do container, menos o gap */
     text-align: left;
-    min-height: 200px;
+    min-height: 200px; /* Garante que os cards tenham altura mínima */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .recurso-icon {
     font-size: 2.5em;
-    color: #e56d35;
+    color: #e56d35; /* Cor Laranja/Coral para os ícones */
     margin-bottom: 15px;
 }
 
@@ -513,7 +510,7 @@ body {
 /* --- BLOCO DE ACESSIBILIDADE --- */
 
 .acessibilidade-box {
-    background-color: #e56d35;
+    background-color: #e56d35; /* Fundo Laranja/Coral forte */
     color: #fff;
     border-radius: 10px;
     padding: 40px;
@@ -559,7 +556,7 @@ body {
 
 .parcerias-bloco h3 {
     font-size: 2em;
-    color: #a4c90e;
+    color: #a4c90e; /* Cor Verde para o título de Parcerias */
     margin-bottom: 40px;
 }
 
@@ -598,7 +595,7 @@ body {
 
 .contato-section {
     background-color: #f7f7f7; 
-    padding: 80px 0 0;
+    padding: 80px 0 0; 
     color: #444; 
     text-align: center;
 }
@@ -611,7 +608,7 @@ body {
 .badge-contato {
     display: inline-block;
     background-color: #fff;
-    color: #e56d35;
+    color: #e56d35; 
     padding: 8px 15px;
     border-radius: 50px;
     font-size: 0.9em;
@@ -631,7 +628,6 @@ body {
     color: #666;
 }
 
-/* Estilos do Formulário */
 .form-wrapper {
     display: flex;
     justify-content: center;
@@ -640,6 +636,7 @@ body {
 
 .contato-form {
     background-color: #fff;
+    color: #444;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -653,6 +650,7 @@ body {
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 5px;
+    color: #444; 
 }
 
 .contato-form input[type="text"],
@@ -664,11 +662,12 @@ body {
     border-radius: 5px;
     font-size: 1em;
     transition: border-color 0.3s;
+    color: #444; 
 }
 
 .contato-form input:focus,
 .contato-form textarea:focus {
-    border-color: #a4c90e;
+    border-color: #a4c90e; 
     outline: none;
 }
 
@@ -698,10 +697,12 @@ body {
     margin-top: 10px;
 }
 
+
+
 /* --- RODAPÉ (FOOTER) --- */
 
 .footer {
-    background-color: #333;
+    background-color: #333; /* Fundo Cinza Escuro/Preto */
     color: #fff;
     padding: 50px 0;
     font-size: 0.9em;
@@ -719,6 +720,7 @@ body {
 }
 
 .footer-logo {
+    /* Container para a imagem do logo */
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -726,6 +728,7 @@ body {
 }
 
 .logo-footer-img {
+    /* Estilo para a imagem real do logo dentro do footer */
     height: 40px; 
     width: auto;
 }
@@ -734,7 +737,7 @@ body {
     font-size: 1.2em;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #a4c90e;
+    color: #a4c90e; /* Títulos em Verde */
 }
 
 .footer-links ul {
@@ -767,3 +770,4 @@ body {
     font-style: italic;
     margin-top: 15px;
 }
+
