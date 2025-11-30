@@ -80,15 +80,15 @@ body {
 /* --- ESTILOS DA SEÇÃO HERO --- */
 
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
-                url('img/fundo-agro.jpg') no-repeat center center/cover;
+    background: url('hero-background.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
-    color: #fff; /* Garante que o texto do Hero seja branco */
+    justify-content: center;
+    color: white; 
+    position: relative;
+    
 }
-
 .hero-content {
     max-width: 600px;
     margin-left: 100px;
@@ -823,3 +823,4 @@ body {
     color: #198754 !important;
     border-color: #198754 !important;
 }
+
