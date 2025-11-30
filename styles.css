@@ -80,15 +80,29 @@ body {
 /* --- ESTILOS DA SEÇÃO HERO --- */
 
 .hero-section {
-    background: url('fundo-agro.jpg') no-repeat center center/cover;
+    /* Define o tamanho da seção e como ela exibe o conteúdo */
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white; 
-    position: relative;
-    
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda, como no seu design */
+    padding-left: 10%; /* Adiciona um espaço da borda */
+    position: relative; /* Necessário para posicionar elementos internos, se necessário */
+    color: #fff; /* Cor do texto branco */
+
+    /* DEFINIÇÃO DA IMAGEM DE FUNDO E DO OVERLAY */
+    /* 1. O gradiente 'linear-gradient' cria a camada de opacidade (cinza/verde)
+    2. O 'url()' abaixo carrega a imagem em si.
+    */
+    background-image: 
+        linear-gradient(rgba(105, 105, 105, 0.7), rgba(105, 105, 105, 0.7)), /* Ajuste o RGBA (0.7) se quiser mais escuro/claro */
+        url('fundo-agro.jpg');
+
+    /* Garante que a imagem cubra toda a área da seção */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
+
 .hero-content {
     max-width: 600px;
     margin-left: 100px;
@@ -823,5 +837,6 @@ body {
     color: #198754 !important;
     border-color: #198754 !important;
 }
+
 
 
