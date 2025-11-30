@@ -94,10 +94,7 @@ body {
     2. O 'url()' abaixo carrega a imagem em si.
     */
     background-image: 
-        linear-gradient(rgba(105, 105, 105, 0.7), rgba(105, 105, 105, 0.7)), /* Ajuste o RGBA (0.7) se quiser mais escuro/claro */
-        url('fundo-agro.jpg');
-
-    /* Garante que a imagem cubra toda a área da seção */
+    url('fundo-agro.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -837,6 +834,7 @@ body {
     color: #198754 !important;
     border-color: #198754 !important;
 }
+
 
 
 
