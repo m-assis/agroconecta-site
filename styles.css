@@ -80,7 +80,7 @@ body {
 /* --- ESTILOS DA SEÇÃO HERO --- */
 
 .hero-section {
-    background: url('hero-background.jpg') no-repeat center center/cover;
+    background: url('fundo-agro.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -823,4 +823,5 @@ body {
     color: #198754 !important;
     border-color: #198754 !important;
 }
+
 
