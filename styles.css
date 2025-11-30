@@ -28,7 +28,6 @@ body {
 /* --- ESTILOS DO CABEÇALHO (NAVBAR) --- */
 
 .header {
-    background-color: rgba(142, 150, 48, 0.8);
     position: absolute;
     width: 100%;
     z-index: 10;
@@ -80,19 +79,13 @@ body {
 /* --- ESTILOS DA SEÇÃO HERO --- */
 
 .hero-section {
-    /* Define o tamanho da seção e como ela exibe o conteúdo */
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda, como no seu design */
-    padding-left: 10%; /* Adiciona um espaço da borda */
-    position: relative; /* Necessário para posicionar elementos internos, se necessário */
-    color: #fff; /* Cor do texto branco */
-
-    /* DEFINIÇÃO DA IMAGEM DE FUNDO E DO OVERLAY */
-    /* 1. O gradiente 'linear-gradient' cria a camada de opacidade (cinza/verde)
-    2. O 'url()' abaixo carrega a imagem em si.
-    */
+    justify-content: flex-start; 
+    padding-left: 10%;
+    position: relative;
+    color: #fff; 
     background-image: 
     url('fundo-agro.jpg');
     background-size: cover;
@@ -834,6 +827,7 @@ body {
     color: #198754 !important;
     border-color: #198754 !important;
 }
+
 
 
 
