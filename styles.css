@@ -784,48 +784,63 @@ body {
 }
 
 /* ======================================= */
-/* ESTILOS DA CALCULADORA DE INSUMOS */
+/* ESTILOS DA CALCULADORA DE INSUMOS - CORRIGIDO */
 /* ======================================= */
 
-/* Cor de fundo para a seção da calculadora */
 .calculadora-section {
-    background-color: #f8f9fa;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    color: #343a40;
+    background-color: #f8f9fa; 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: #343a40; 
 }
 
-/* Estilo para o cartão de cálculo (shadow-lg é do Bootstrap, mas podemos refinar) */
+
 .calculadora-section .card {
-    border: 1px solid #e9ecef;
-    border-radius: 0.75rem;
+    border: 1px solid #e9ecef;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    text-align: left; 
 }
 
 .calculadora-section h2 {
-    color: #198754 !important;
+    color: #a4c90e !important; 
 }
 
 .calculadora-section p.lead {
-    color: #555555 !important;
+    color: #555555 !important;
 }
 
 /* Estilo para os resultados */
 #resultado-calculadora {
-    border-top: 2px solid #28a745;
-    border-radius: 0.5rem;
-    background-color: #e2f0e9 !important;
+    
+    border-top: 2px solid #a4c90e; 
+    border-radius: 0.5rem;
+    background-color: #e9f5d7 !important; 
+    color: #424242; 
 }
 
 /* Centraliza os títulos grandes de resultado */
 #totalInsumo, #custoTotal {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #424242; 
 }
 
-/* Cor do badge (opcional, se não estiver usando o padrão success) */
+/* Cor do badge "Resultados da Otimização" */
 .badge.text-success.border-success {
-    color: #198754 !important;
-    border-color: #198754 !important;
+    
+    color: #a4c90e !important; 
+    border-color: #a4c90e !important; 
+    background-color: #fff; 
+}
+
+
+.btn-success {
+    background-color: #a4c90e !important;
+    border-color: #a4c90e !important;
+    color: #000;
+    font-weight: bold;
+    padding: 12px 25px;
 }
 
 
